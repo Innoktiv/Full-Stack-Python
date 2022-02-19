@@ -34,9 +34,9 @@ from signal import siginterrupt
 print("Ingrese su edad: ")
 edad = int(input())
 print("Vive en LATAM?")
-origen = input()
+origen = input().lower()
 print("Le gusta el deporte?")
-deportista = input()
+deportista = input().lower()
 
 if origen == "si":
     print("Por favor responda el cuestionario de habitos alimenticios")
