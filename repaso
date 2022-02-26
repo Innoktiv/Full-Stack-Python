@@ -1,0 +1,113 @@
+#Metodos de listas
+
+#compras = ["manzana","banana","cereza","manzana","cereza"]
+
+#precios = [222, 14, 60, 8]
+
+#print(len(compras))
+#print("banana" in compras)
+#print(compras.count("cereza"))
+#compras.append("naranja")
+#compras.insert(2, "sandia")
+#compras2 = ["uvas", "moras"]
+#compras.extend(compras2)
+#tupla = ("limon", "anana")
+#compras.extend(tupla)
+#compras += tupla
+#compras.remove("banana")
+#compras.pop() #elimina el ultimo indice
+#compras.pop(1) #elimina el indice especificado
+#del compras[0]
+#del compras
+#compras.clear()
+#compras.sort() #ordena alfabeticamente
+#compras.sort(reverse = True) #ordena en reversa de acuerdo al alfabeto
+#compras.reverse() #ordena de reversa la lista
+#mi_otra_lista = compras.copy()
+#mi_otra_lista2 = list(compras)
+#mi_otra_lista3 = compras
+#print(id(compras))
+#print(id(mi_otra_lista))
+#print(id(mi_otra_lista2))
+#print(id(mi_otra_lista3))
+
+# Metodos de tuplas
+
+#materiales = ("martillo", "pala", "bolson", "carretilla", "escalera")
+
+#otra = ("escalera",)
+
+#materiales += otra
+#materiales += precios
+#materiales += compras
+#del materiales
+#(green, *yellow, red, blue) = materiales
+#print(green)
+#print(yellow)
+#print(red)
+#print(blue)
+
+#Metodos de set
+
+nombres = {"Viviana", "Maria", "Lucas", "Juan"}
+
+#print("Lucas" in nombres)
+#nombres.add("Federico")
+#nombres2 = {"Nico", "Mariana"}
+#nombres.update(nombres2)
+#lista = ["Ricardo", "Romina"]
+#nombres.update(lista)
+#nombres.remove("Maria")
+#nombres.discard("Lucas")
+#nombres.clear()
+#del nombres
+#edades = {22, 34, 16, 24}
+#nombres3 = nombres.union(edades)
+#nombres.update(edades)
+#nombres3 = nombres
+#print(nombres3)
+
+#Metodos de diccionarios
+
+concesionaria = {
+                1 :
+                        {"marca": "Ford",
+                         "modelo": "Mustang",
+                         "año": 1964},
+                2 :
+                        {"marca": "Chevrolet",
+                         "modelo": "Corsa",
+                         "año": 1980},
+                }
+
+concesionaria["auto1"]["año"] = 1945
+
+#print(concesionaria["auto1"]["año"])
+
+
+concesionaria["auto2"].update({"color":"rojo"})
+
+print(concesionaria["auto2"].keys())
+print(concesionaria["auto2"].values())
+print(concesionaria["auto2"].items())
+
+#modelo = auto["modelo"]
+#año = auto.get("año")
+#auto["año"] = 1980
+#auto.update({"modelo": "A"})
+#auto["color"] = "rojo"
+#auto.pop("color")
+#auto.popitem()
+del concesionaria["auto1"]["año"]
+#auto.clear()
+#nuevo_auto = auto.copy()
+#nuevo_auto2 = dict(auto)
+#print(nuevo_auto)
+#print(nuevo_auto2)
+
+d = {} 
+d['a'] = 0
+d['b'] = 1
+d['c'] = 2
+keys = list(d.keys())
+print(keys[1])

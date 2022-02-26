@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center; text-transform: uppercase;
+}
+
+.title{
+    margin-top: 350px;
+    padding-bottom: 200px;
+    color: red;
+}
+
+.height{
+    height: 400px;
+}
